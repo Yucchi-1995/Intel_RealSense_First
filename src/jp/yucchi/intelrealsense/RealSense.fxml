@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="600.0" prefWidth="870.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.yucchi.intelrealsense.RealSenseController">
+   <children>
+      <Text fill="WHITE" layoutX="154.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intel RealSense with JavaFX" textAlignment="CENTER" wrappingWidth="870.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Serif Bold" size="66.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#0098f7" />
+               </light>
+            </Lighting>
+         </effect>
+      </Text>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="480.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <RadioButton fx:id="colorRadioButton" layoutX="678.0" layoutY="162.0" mnemonicParsing="false" selected="true" text="Color" AnchorPane.leftAnchor="680.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="110.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="depthRadioButton" layoutX="687.0" layoutY="217.0" mnemonicParsing="false" text="Depth" toggleGroup="$toggleGroup" AnchorPane.leftAnchor="680.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="irRadioButton" layoutX="687.0" layoutY="283.0" mnemonicParsing="false" text="IR" toggleGroup="$toggleGroup" AnchorPane.leftAnchor="680.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="250.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="startButton" layoutX="696.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleStartButtonAction" text="START" AnchorPane.leftAnchor="680.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="340.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+      <Button fx:id="stopButton" disable="true" layoutX="696.0" layoutY="433.0" mnemonicParsing="false" onAction="#handleStoptButtonAction" text="STOP" AnchorPane.leftAnchor="680.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="430.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="705.0" layoutY="511.0" mnemonicParsing="false" onAction="#handleExittButtonAction" text="EXIT" AnchorPane.leftAnchor="680.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="520.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

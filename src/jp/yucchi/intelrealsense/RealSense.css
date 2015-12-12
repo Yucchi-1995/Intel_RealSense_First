@@ -1,0 +1,173 @@
+/* 
+    Author     : Yucchi
+*/
+
+/* AnchorPane */
+#AnchorPane {
+    -fx-background-color: black;
+}
+
+/* ImageView */
+#imageView{
+    -fx-background-color: black;
+}
+
+
+/* Button */
+.button {
+-fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+ 
+    -fx-background-radius: 0;
+ 
+    -fx-background-color: #1d1d1d;
+   
+     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 30pt;
+    -fx-text-fill: #d8d8d8;
+}
+
+.button:hover {
+-fx-background-color: #3a3a3a;
+}
+
+.button:pressed, .button:default:hover:pressed
+{
+  -fx-background-color: white;
+  -fx-text-fill: #1d1d1d;
+}
+
+.button:focused
+{
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+ 
+.button:disabled, .button:default:disabled
+{
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+ 
+.button:default
+{
+    -fx-background-color: #008287;
+    -fx-text-fill: #ffffff;
+}
+ 
+.button:default:hover{
+    -fx-background-color: #219297;
+}
+
+
+/*******************************************************************************
+ *                                                                             *
+ * Radio Button                                                                *
+ *                                                                             *
+ ******************************************************************************/
+ 
+.radio-button {
+    -fx-text-fill: white;
+}
+ 
+.radio-button .radio  {
+   -fx-background-color: #cfcfcf;
+   -fx-background-radius: 1.0em; /* large value to make sure this remains circular */
+   -fx-background-insets: 0;
+    
+   -fx-border-radius: 1.0em;
+   -fx-border-color: #cfcfcf;
+     
+   -fx-padding: 4px; /* 4 -- padding from outside edge to the inner black dot */
+}
+ 
+.radio-button:hover .radio {
+    -fx-background-color: #e0e0e0;
+    -fx-border-color: #e0e0e0;
+}
+ 
+ 
+.radio-button .dot {
+   -fx-background-color: transparent;
+   -fx-background-insets: 0;
+   -fx-background-radius: 1.0em; /* large value to make sure this remains circular */
+   -fx-padding: 6px; /* 3 -- radius of the inner black dot when selected */
+}
+ 
+.radio-button:selected .dot {
+   -fx-background-color: #212121;
+}
+ 
+.radio-button:disabled
+{
+    -fx-opacity: 0.5;
+}
+ 
+.radio-button:disabled .radio
+{
+    -fx-background-color: #e6e6e6;
+    -fx-border-color: #d9d9d9;
+}
+ 
+.radio-button:focused .radio
+{
+   -fx-background-color: #cfcfcf;
+   -fx-background-radius: 1.0em; /* large value to make sure this remains circular */
+   -fx-background-insets: 0;
+    
+   -fx-border-style: solid, segments(1, 1);
+   -fx-border-radius: 1.0em, 0;
+   -fx-border-color: #cfcfcf, white;
+   -fx-border-insets: 0px, -2px;
+   -fx-border-width: 1px, 1px;
+     
+   -fx-padding: 4px; /* 4 -- padding from outside edge to the inner black dot */  
+}
+ 
+.radio-button:armed .radio {
+    -fx-background-color: white;
+    -fx-border-color: white;
+}
+ 
+.radio-button:pressed:selected .radio
+{
+    -fx-background-color: white;
+    -fx-border-color: white;
+}
+ 
+.radio-button:pressed:selected .dot
+{
+    -fx-background-color: black;
+}
+ 
+.radio-button:armed .dot
+{
+    -fx-background-color: white;
+}
+ 
+.radio-button:focused:armed .radio
+{
+   -fx-background-color: white;
+   -fx-background-radius: 1.0em; /* large value to make sure this remains circular */
+   -fx-background-insets: 0;
+    
+   -fx-border-style: solid, segments(1, 1);
+   -fx-border-radius: 1.0em, 0;
+   -fx-border-color: white, white;
+   -fx-border-insets: 0px, -2px;
+   -fx-border-width: 1px, 1px;
+     
+   -fx-padding: 4px; /* 4 -- padding from outside edge to the inner black dot */  
+}
+
+
+
+
+
+
+
